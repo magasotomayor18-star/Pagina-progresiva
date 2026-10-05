@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ec4899">
+    <meta
+      name="description"
+      content="Entrena a tu manera con Fit Girl Studio: ejercicios, rutinas personalizadas y seguimiento de tu progreso."
+    >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>Fit Girl Studio | Entrena a tu manera</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Saltar al contenido</a>
+
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Fit Girl Studio, ir al inicio">
+        <span class="brand-mark" aria-hidden="true">FG</span>
+        <span>FIT GIRL <strong>STUDIO</strong></span>
+      </a>
+
+      <nav class="main-navigation" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#ejercicios">Ejercicios</a></li>
+          <li><a href="#rutinas">Rutinas</a></li>
+          <li><a href="#progreso">Progreso</a></li>
+          <li><a href="#favoritos">Favoritos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <button class="button button-outline install-button" id="btn-install" type="button">
+        Instalar app
+      </button>
+
+      <div id="network-status" role="status" aria-live="polite"></div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Tu espacio. Tu fuerza. Tu momento.</p>
+          <h1 id="hero-title" lang="es">¿Estás listo para desatar tu fuerza interior?</h1>
+          <p class="hero-description">
+            Muévete a tu ritmo, descubre entrenamientos que te hacen sentir bien y celebra cada paso de tu progreso.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#ejercicios">Explorar Ejercicios</a>
+            <a class="button button-secondary" href="#rutinas">Crear Mi Rutina</a>
+          </div>
+          <p class="hero-note">Entrena con intención. Brilla con confianza.</p>
+        </div>
+
+        <section class="hero-gallery" aria-label="Entrenamiento y bienestar">
+          <figure class="hero-image hero-image-main">
+            <img
+              src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+              alt="Deportista entrenando al aire libre"
+              width="1000"
+              height="667"
+              fetchpriority="high"
+            >
+          </figure>
+          <figure class="hero-image hero-image-secondary">
+            <img
+              src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&amp;fit=crop&amp;w=700&amp;q=85"
+              alt="Mujer practicando yoga"
+              width="700"
+              height="467"
+              loading="lazy"
+            >
+          </figure>
+          <div class="hero-accent" aria-hidden="true">
+            <span>STRONG</span>
+            <span>IN YOUR OWN WAY</span>
+          </section>
+        </div>
+      </section>
+
+      <section class="section exercises-section" id="ejercicios" aria-labelledby="exercises-title">
+        <div class="section-heading">
+          <p class="eyebrow">Encuentra tu movimiento</p>
+          <h2 id="exercises-title">Biblioteca de ejercicios</h2>
+          <p>Elige una actividad que se adapte a tu energía y a tus objetivos de hoy.</p>
+        </div>
+
+        <div class="exercise-controls">
+          <label class="visually-hidden" for="search-exercise">Buscar ejercicios</label>
+          <input
+            type="search"
+            id="search-exercise"
+            name="search-exercise"
+            placeholder="Busca un ejercicio..."
+            autocomplete="off"
+          >
+          <div class="category-filters" role="group" aria-label="Filtrar ejercicios por categoría">
+            <button class="filter-button" type="button" data-category="Pilates" aria-pressed="false">Pilates</button>
+            <button class="filter-button" type="button" data-category="Power Dance" aria-pressed="false">Power Dance</button>
+            <button class="filter-button" type="button" data-category="Fuerza" aria-pressed="false">Fuerza</button>
+            <button class="filter-button" type="button" data-category="Yoga" aria-pressed="false">Yoga</button>
+            <button class="filter-button" type="button" data-category="Cardio" aria-pressed="false">Cardio</button>
+            <button class="filter-button is-active" type="button" data-category="Todos" aria-pressed="true">Todos</button>
+          </div>
+        </div>
+
+        <p id="exercises-live-status" class="visually-hidden" role="status" aria-live="polite"></p>
+        <div id="exercises-container" class="exercise-grid">
+          <p class="loading-message">Preparando tus ejercicios...</p>
+        </div>
+      </section>
+
+      <section class="section routine-section" id="rutinas" aria-labelledby="routine-title">
+        <div class="section-heading">
+          <p class="eyebrow">Diseñada por ti</p>
+          <h2 id="routine-title">Creador de rutinas</h2>
+          <p>Combina tus ejercicios favoritos y arma una rutina que se sienta tuya.</p>
+        </div>
+
+        <div class="routine-builder">
+          <div class="routine-add">
+            <label for="routine-exercise-select">Agregar un ejercicio</label>
+            <div class="routine-add-controls">
+              <select id="routine-exercise-select" name="routine-exercise">
+                <option value="">Selecciona un ejercicio</option>
+              </select>
+              <button class="button button-secondary" id="add-to-routine" type="button">Agregar ejercicio</button>
+            </div>
+          </div>
+
+          <div class="routine-settings">
+            <div class="form-field">
+              <label for="routine-sets">Series</label>
+              <input id="routine-sets" name="routine-sets" type="number" min="1" max="20" value="3">
+            </div>
+            <div class="form-field">
+              <label for="routine-reps">Repeticiones</label>
+              <input id="routine-reps" name="routine-reps" type="number" min="1" max="100" value="12">
+            </div>
+          </div>
+
+          <div class="routine-list-wrapper">
+            <h3>Tu rutina</h3>
+            <div id="routine-exercises" aria-live="polite">
+              <p>Aún no has agregado ejercicios. Explora la biblioteca para empezar.</p>
+            </div>
+          </div>
+
+          <div class="routine-save">
+            <label for="routine-name">Nombre de tu rutina</label>
+            <div class="routine-add-controls">
+              <input id="routine-name" name="routine-name" type="text" maxlength="60" placeholder="Ej. Mi rutina de energía">
+              <button class="button button-primary" id="save-routine" type="button">Guardar mi rutina</button>
+            </div>
+            <p id="routine-feedback" role="status" aria-live="polite"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section progress-section" id="progreso" aria-labelledby="progress-title">
+        <div class="section-heading">
+          <p class="eyebrow">Cada paso cuenta</p>
+          <h2 id="progress-title">Tu progreso</h2>
+          <p>Reconoce tu constancia y todo lo que has logrado.</p>
+        </div>
+        <section class="progress-summary" aria-label="Resumen de actividad">
+          <article class="progress-card">
+            <span class="progress-value" id="workouts-count">0</span>
+            <h3>Entrenamientos</h3>
+          </article>
+          <article class="progress-card">
+            <span class="progress-value" id="minutes-count">0</span>
+            <h3>Minutos en movimiento</h3>
+          </article>
+          <article class="progress-card">
+            <span class="progress-value" id="calories-count">0</span>
+            <h3>Calorías estimadas</h3>
+          </article>
+        </section>
+        <div id="workouts-history" aria-live="polite">
+          <p>Tus entrenamientos completados aparecerán aquí.</p>
+        </div>
+      </section>
+
+      <section class="section favorites-section" id="favoritos" aria-labelledby="favorites-title">
+        <div class="section-heading">
+          <p class="eyebrow">Guárdalos para después</p>
+          <h2 id="favorites-title">Tus favoritos</h2>
+          <p>Ten a mano esos ejercicios a los que siempre quieres volver.</p>
+        </div>
+        <div id="favorites-container" class="exercise-grid">
+          <p>Todavía no tienes favoritos. Guarda un ejercicio de la biblioteca para verlo aquí.</p>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contacto" aria-labelledby="contact-title">
+        <div class="section-heading">
+          <p class="eyebrow">Estamos para acompañarte</p>
+          <h2 id="contact-title">Cuéntanos tu objetivo</h2>
+          <p>Comparte tus datos y tu meta fitness para que podamos conocerte mejor.</p>
+        </div>
+
+        <form id="contact-form" novalidate>
+          <div class="form-field">
+            <label for="name">Nombre</label>
+            <input id="name" name="name" type="text" autocomplete="name" required aria-invalid="false" aria-describedby="error-name">
+            <span class="error-msg" id="error-name"></span>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-invalid="false" aria-describedby="error-email">
+            <span class="error-msg" id="error-email"></span>
+          </div>
+          <div class="form-field">
+            <label for="phone">Teléfono</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" aria-invalid="false" aria-describedby="error-phone">
+            <span class="error-msg" id="error-phone"></span>
+          </div>
+          <div class="form-field">
+            <label for="fitness-goal">Objetivo Fitness</label>
+            <select id="fitness-goal" name="fitness-goal" required aria-invalid="false" aria-describedby="error-fitness-goal">
+              <option value="">Selecciona tu objetivo</option>
+              <option value="strength">Ganar fuerza</option>
+              <option value="endurance">Mejorar mi resistencia</option>
+              <option value="flexibility">Aumentar mi flexibilidad</option>
+              <option value="wellbeing">Sentirme mejor y tener más energía</option>
+              <option value="habit">Crear un hábito de movimiento</option>
+            </select>
+            <span class="error-msg" id="error-fitness-goal"></span>
+          </div>
+          <button class="button button-primary" type="submit">Enviar</button>
+          <p id="contact-feedback" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="#inicio">
+        <span class="brand-mark" aria-hidden="true">FG</span>
+        <span>FIT GIRL <strong>STUDIO</strong></span>
+      </a>
+      <p>Muévete a tu manera. Celebra tu fuerza.</p>
+    </footer>
+
+    <aside class="cookie-banner" id="cookie-banner" aria-labelledby="cookie-title">
+      <div>
+        <h2 id="cookie-title">Tu privacidad importa</h2>
+        <p>Usamos almacenamiento local para recordar tus preferencias y mejorar tu experiencia en Fit Girl Studio.</p>
+      </div>
+      <div class="cookie-actions">
+        <button class="button button-primary" id="accept-cookies" type="button">Aceptar</button>
+        <button class="button button-outline" id="decline-cookies" type="button">Rechazar</button>
+      </div>
+    </aside>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

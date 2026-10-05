@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "nombre": "Pilates de cuerpo completo",
+    "categoria": "Pilates",
+    "descripcion": "Fortalece el abdomen, mejora la postura y activa todo el cuerpo con movimientos controlados.",
+    "nivel": "Principiante",
+    "duracion": "15 min",
+    "calorias": 120,
+    "imagen": "https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&w=800&q=80",
+    "etiqueta": "Pop"
+  },
+  {
+    "id": 2,
+    "nombre": "Power Dance latina",
+    "categoria": "Power Dance",
+    "descripcion": "Sigue una coreografía llena de energía para elevar el ritmo cardíaco y disfrutar mientras te mueves.",
+    "nivel": "Intermedio",
+    "duracion": "15 min",
+    "calorias": 120,
+    "imagen": "https://images.unsplash.com/photo-1579758629938-03607ccdbaba?auto=format&fit=crop&w=800&q=80",
+    "etiqueta": "Nuevo"
+  },
+  {
+    "id": 3,
+    "nombre": "Fuerza con peso corporal",
+    "categoria": "Fuerza",
+    "descripcion": "Trabaja piernas, glúteos y brazos con ejercicios funcionales que puedes hacer en casa.",
+    "nivel": "Intermedio",
+    "duracion": "15 min",
+    "calorias": 120,
+    "imagen": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80",
+    "etiqueta": "Pop"
+  },
+  {
+    "id": 4,
+    "nombre": "Yoga para despertar",
+    "categoria": "Yoga",
+    "descripcion": "Conecta respiración y movimiento con posturas suaves para ganar movilidad y comenzar el día con calma.",
+    "nivel": "Principiante",
+    "duracion": "15 min",
+    "calorias": 120,
+    "imagen": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80",
+    "etiqueta": "Nuevo"
+  },
+  {
+    "id": 5,
+    "nombre": "Cardio sculpt",
+    "categoria": "Cardio",
+    "descripcion": "Combina intervalos cardiovasculares y movimientos de tonificación para una sesión dinámica.",
+    "nivel": "Avanzado",
+    "duracion": "15 min",
+    "calorias": 120,
+    "imagen": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80",
+    "etiqueta": "Pop"
+  },
+  {
+    "id": 6,
+    "nombre": "Pilates para glúteos",
+    "categoria": "Pilates",
+    "descripcion": "Activa glúteos y caderas con una secuencia de bajo impacto enfocada en el control y la estabilidad.",
+    "nivel": "Intermedio",
+    "duracion": "15 min",
+    "calorias": 120,
+    "imagen": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80",
+    "etiqueta": "Nuevo"
+  },
+  {
+    "id": 7,
+    "nombre": "Yoga de equilibrio",
+    "categoria": "Yoga",
+    "descripcion": "Desarrolla equilibrio, flexibilidad y concentración con posturas de pie y respiración consciente.",
+    "nivel": "Intermedio",
+    "duracion": "15 min",
+    "calorias": 120,
+    "imagen": "https://images.unsplash.com/photo-1599447421416-3414500d18a5?auto=format&fit=crop&w=800&q=80",
+    "etiqueta": "Pop"
+  },
+  {
+    "id": 8,
+    "nombre": "Fuerza total con mancuernas",
+    "categoria": "Fuerza",
+    "descripcion": "Una rutina completa para fortalecer tren superior e inferior con movimientos de fuerza adaptables.",
+    "nivel": "Avanzado",
+    "duracion": "15 min",
+    "calorias": 120,
+    "imagen": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80",
+    "etiqueta": "Nuevo"
+  },
+  {
+    "id": 9,
+    "nombre": "Power Dance pop",
+    "categoria": "Power Dance",
+    "descripcion": "Libera energía con pasos de baile fáciles de seguir y una secuencia que activa todo el cuerpo.",
+    "nivel": "Principiante",
+    "duracion": "15 min",
+    "calorias": 120,
+    "imagen": "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80",
+    "etiqueta": "Pop"
+  },
+  {
+    "id": 10,
+    "nombre": "Cardio de bajo impacto",
+    "categoria": "Cardio",
+    "descripcion": "Mejora tu resistencia con desplazamientos y movimientos rítmicos amables con las articulaciones.",
+    "nivel": "Principiante",
+    "duracion": "15 min",
+    "calorias": 120,
+    "imagen": "https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&w=800&q=80",
+    "etiqueta": "Nuevo"
+  }
+]
